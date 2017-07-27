@@ -2,7 +2,8 @@ import { Routes,RouterModule } from '@angular/router';
 const appRoutes : Routes = [
     {
         path: '',
-        loadChildren: '../core/core.module#CoreModule'
+        redirectTo: 'home',
+        pathMatch: 'full'
     },
     {
         path : 'home',
