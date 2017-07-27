@@ -1,0 +1,43 @@
+#main-navbar(fixednav='')
+  nav
+    section.nav-wrapper
+      a.button-collapse(href='javascript:', data-activates='mobile-demo')
+        .icon.material-icons.black-text menu
+      ul.left.hide-on-med-and-down
+        li
+          a(href='/')
+            span Home
+        li
+          a((click) = 'goToAbout()')
+            span About
+        li
+          a((click) = 'goToServices()') 
+            span Services
+        li
+          a((click) = 'goToReviews()')
+            span Reviews
+        li
+          a((click) = 'goToBlog()')
+            span Blog
+        li
+          a((click) = 'goToContact()')
+            span Contact
+      ul#mobile-demo.side-nav
+        li
+          a(href='#')
+            span Home
+        li
+          a((click) = 'goToAbout()')
+            span About
+        li
+          a((click) = 'goToServices()')
+            span Services
+        li
+          a((click) = 'goToReviews()')
+            span Reviews
+        li
+          a((click) = 'goToBlog()')
+            span Blog
+        li
+          a((click) = 'goToContact()')
+            span Contact

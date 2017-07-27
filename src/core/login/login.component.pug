@@ -1,0 +1,63 @@
+.col.s12
+    ul.tabs
+        li.login-tab.col.s3.tab
+            a#login-tabtitle.black-text(href='#loginPane') Log in
+        li.login-tab.col.s3.tab
+            a#register-tabtitle.black-text(href='#registerPane') Register
+#loginPane.col.s12
+    .row
+        form.col.s12
+            .row
+                .input-field.col.s12
+                    input.col.s2(*ngIf='isMobile', type='text', name='countrycode', [(ngModel)]= 'countryCode')
+                    input#usernameMob.validate(type='text', name='user_name', [(ngModel)]= 'username' , (keyup)='formatUserName($event)')
+                    label(for='usernameMob') Email/mobile
+            .row
+                .input-field.col.s12
+                    input#password.validate(type='password', name='password', [(ngModel)]= 'password')
+                    label(for='password') Password
+            .row
+                button#log-in.col.s12.btn.btn-primary.validate(type='button', (click)='login()')
+                    label Log In
+            .float-right.cf.padding-bottom-20
+                div.text-right.red-text Forgot Password?
+                div.text-right.text-muted Don't have an account? Sign Up
+            hr.cf
+            .social-logins.padding-bottom-20
+                .text-center.padding-bottom-20 Or Log in with
+                button.col.s6.btn-large.blue Facebook
+                button.col.s6.btn-large Google
+#registerPane.col.s12
+    .row
+        form.col.s12
+            .input-field.col.s12
+                input#name.validate(type='text', name="name", [(ngModel)]='user.name')
+                label(for='name') Name
+            .input-field.col.s12
+                input#emailid.validate(type='email', name="email",  [(ngModel)]='user.email')
+                label(for='emailid') Email id
+            .input-field.col.s3
+                select
+                    option(value='', selected='') +91
+                    option(value='1') +91
+                    option(value='2') +92
+                    option(value='3') +93
+                    option(value='3') +93
+                    option(value='3') +93
+                    option(value='3') +93
+                    option(value='3') +93
+                    option(value='3') +93
+                    option(value='3') +93
+                    option(value='3') +93
+            .input-field.col.s9
+                input#tel.validate(type='text',name="phone",  [(ngModel)]='user.phone')
+                label(for='tel') Mobile No.
+            .input-field.col.s12
+                input#reg-password.validate(type='password',name="password",  [(ngModel)]='user.password')
+                label(for='reg-password') Password
+            .input-field.col.s12
+                input#confirm-password.validate(type='password',name="confirmPassword",  [(ngModel)]='user.confirmPassword')
+                label(for='confirm-password') Confirm password
+            button#register.col.s12.btn.btn-primary.validate(type='button', (click)="register(user)")
+
+                label Register

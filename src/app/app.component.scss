@@ -1,0 +1,184 @@
+@import "../shared/styles/styles";
+section,
+footer {
+    padding: 0 16.67%;
+    clear: both;
+    .main-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+#header {
+    padding-top: 0;
+    max-height: 92px;
+    .top-logo {
+        height: 92px;
+    }
+    .small-label{
+        font-size: 14px;
+        padding: 15px;
+        color: #434343;
+        font-weight: 500;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
+#reviews-carousel {
+    min-height: 300px;
+    max-height: 325px;
+}
+
+.navbar-fixed {
+    top: 0 !important;
+    position: fixed;
+    z-index: $zindex-navbar-above;
+}
+
+.badge {
+    max-width: 140px;
+}
+
+.label-medium {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.user {
+    display: inline-block;
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+.float-right {
+    float: right;
+}
+
+.login-label {
+    float: right;
+    padding-top: 20px;
+    label{
+        font-size: 16px;
+       // color: $body-font-color;
+        padding: 10px;
+    }
+}
+
+.section-heading {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.small-heading {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icon-ambulance{
+    background: url("~/assets/images/ambulance.png")  no-repeat center ;
+}
+.icon-blood{
+    background: url("~/assets/images/blood.png")  no-repeat center;
+}
+.icon-homecare{
+    background: url("~/assets/images/homecare.png")  no-repeat center;
+}
+
+.service-icon {
+    overflow: hidden;
+    max-height: 300px;
+    .ico-top {
+        height: 40px;
+        background: #4a4a4a;
+        margin-bottom: 0 !important;
+    }
+    .ico-mid {
+        height: 145px;
+    }
+    &:hover {
+        border-radius: 10px;
+        background: #fafafa;
+        .row {
+            opacity: 1;
+        }
+        .icon-ambulance{
+             background: url("~/assets/images/ambulance-hover.png")  no-repeat center;
+         }
+        .icon-blood{
+            background: url("~/assets/images/blood-hover.png")  no-repeat center;
+        }
+        .icon-homecare{
+            background: url("~/assets/images/homecare-hover.png")  no-repeat center;
+        }
+    }
+    .info-block {
+        height: 30px;
+        padding-top: 5px;
+    }
+    .info {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .ico {
+        height: 204px;
+    }
+}
+.bg-black {
+    background: black;
+    color: #fff;
+}
+
+.service-icon .row {
+    opacity: 0;
+}
+
+.addtitle {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.addcontent {
+    margin-bottom: 20px;
+    word-break: break-all;
+}
+
+.content {
+    color: #1d1d1d;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+#slider {
+    clear: both;
+    overflow: hidden;
+    img {
+        height: 100%;
+    }
+    .carousel {
+        height: 500px;
+    }
+}
