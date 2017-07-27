@@ -38,6 +38,14 @@ As of today, you should be able to see a blue screen with the message 'Angular A
 Open up your console. 
 You should be able to see a Response Object which is requested by the client to the node server through web-sockets, executed at the node layer using the Request Object and the response is transmitted back to the Angular layer using web-sockets
 
+**Login**
+Username: ritwik
+password: ritwik123
+
+**Session Destroy**
+As of now, the session only gets destroyed on /logout
+You can trigger that route to logout or destroy session
+
 **Who do I talk to?**
 
 * Ritwik Banerjee (ritwik2011@gmail.com)
