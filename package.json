@@ -1,5 +1,5 @@
 {
-  "name": "irelief",
+  "name": "boilerplate",
   "main": "server.js",
   "scripts": {
     "start": "npm run eslint && nodemon server",

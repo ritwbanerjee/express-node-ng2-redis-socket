@@ -4,7 +4,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-IRelief client facing web app through which the user can access and book Ambulance Services, blood bank services and home care services.
+Client facing web app through which the user can access and book Ambulance Services, blood bank services and home care services.
 
 **Quick summary of architecture**
 
@@ -63,4 +63,3 @@ The branch author cannot merge his own branch
 **Repo owner or admin**
 
 * Ritwik Banerjee (ritwik2011@gmail.com)
-* Ritesh Ranjan (ritesrnjn@gmail.com)

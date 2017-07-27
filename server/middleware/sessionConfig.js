@@ -10,17 +10,17 @@ module.exports = function(app) {
         uuid          = require('uuid');
 
   // Sets up Express Session
-  app.use(cookieParser('irelief'));
+  app.use(cookieParser('store'));
   let redis = app.get('redis');
   app.use(session({
-    name: 'irelief',
-    secret: 'irelief',
+    name: 'store',
+    secret: 'store',
     store: redis.sessionStore,
     cookie: {
       cookieName: 'xyz',
       expires: false,
       httpOnly: false,
-      secret: 'irelief',
+      secret: 'store',
       secure: false,
       maxAge: 360000000
      },
