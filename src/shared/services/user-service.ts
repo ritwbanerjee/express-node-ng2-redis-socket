@@ -42,13 +42,4 @@ export class UserService {
 
     return observable;
   }
-
-  verifyToken() {
-    let observable = new Observable((observer) => {
-      this.socketService.send('api:try', '').subscribe((response: any) => {
-        observer.next(response);
-      });
-    });
-    return observable;
-  }
 }

@@ -7,7 +7,6 @@ import { AppComponent }        from './app.component';
 
 // Import all services
 import { WebSocketService }    from '../shared/services/websocket-service';
-import { TryService }          from '../shared/services/try-service';
 import { UserService }         from '../shared/services/user-service';
 
 import { appRouting }          from './app.routing.module';
@@ -23,7 +22,6 @@ import { appRouting }          from './app.routing.module';
     AppComponent
   ],
   providers: [
-    TryService,
     UserService,
     WebSocketService
   ],
