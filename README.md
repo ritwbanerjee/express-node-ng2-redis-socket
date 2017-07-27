@@ -15,7 +15,7 @@ Server: NodeJS, ExpressJS, SocketIO, redis-client(for session management and cac
 
 1.0
 
-**How do I get set up?**
+**How do I set up?**
 
 **Pre-requisites**
 
@@ -33,28 +33,10 @@ Type npm install and wait for all the magic to happen. If all is well, you shoul
 Eg: if node-sass fails, first try the command npm rebuild node-sass. If it fails again, hit npm install node-sass -g
 
 Once you have all setup, hit nodemon server
-This will start up the app at http://localhost:3000 or localhost:3000
+This will start up the app at http://localhost:4000 or localhost:4000
 As of today, you should be able to see a blue screen with the message 'Angular App Loaded'. 
 Open up your console. 
 You should be able to see a Response Object which is requested by the client to the node server through web-sockets, executed at the node layer using the Request Object and the response is transmitted back to the Angular layer using web-sockets
-
-
-
-### Contribution guidelines ###
-
-**Code review**
-
-When you review a code, pull down the branch of the Pull Request.
-Run npm run start.
-This will first trigger the eslint to do its linting. Watch out for any linting errors.
-If all is good, look at the functionality that the PR description talks about
-
-**Other guidelines**
-
-Make sure to branch out of Develop and develop on your own personal branches
-When you are done with your changes, push them up on your branch. Pull develop on your branch and raise a Pull Request to Develop.
-No code shall be merged without 1 review. 
-The branch author cannot merge his own branch
 
 **Who do I talk to?**
 
